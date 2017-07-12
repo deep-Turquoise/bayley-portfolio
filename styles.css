@@ -1,5 +1,5 @@
 .body {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     width: 100%;
     height: auto;
     background-color: white;
@@ -58,7 +58,7 @@
     left: 0;
     height: 80%;
     width: 70%;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: rgba(255, 0, 0, 0.7);
     visibility: hidden;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .project_Block_Overlay h1 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .project_Block_Overlay p {
