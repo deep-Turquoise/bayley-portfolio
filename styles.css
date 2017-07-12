@@ -39,6 +39,7 @@
 
 .project_Block {
     display: inline-block;
+    position: relative;
     height: 216px;
     width: 384px;
     margin-right: 20px;
@@ -52,11 +53,12 @@
 }
 
 .project_Block_Overlay {
-    margin-top: 0;
-    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 80%;
     width: 70%;
-    background-color: rgba(255, 0, 0, 0.3);
+    background-color: rgba(255, 0, 0, 0.8);
     visibility: hidden;
 }
 
