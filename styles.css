@@ -41,13 +41,15 @@
 .project_Block {
     display: inline-block;
     height: 270px;
-    width: auto;
+    width: 480px;
 }
 
 .project_Block_Overlay {
     position: absolute;
     top: 5px;
     left: 5px;
+    height: 80%;
+    width: 70%;
     background-color: red;
     display: hidden;
 }
