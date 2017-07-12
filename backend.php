@@ -13,7 +13,8 @@ function get_Categories(){
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            print "<div class=\"category_Block\"><a onclick='getProjects(" . $row['name'] . ")'>" . $row['name'] ."</a></div>";
+            $name = $row['name'];
+            print "<div class=\"category_Block\"><a onclick='getProjects(\"$name\")'>$name</a></div>";
         }
     }
     $conn->close();
