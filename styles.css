@@ -26,6 +26,8 @@
 
 .category_Block a:hover {
     cursor: pointer;
+    background-color: red;
+    color: white;
 }
 
 .project_Panel {
