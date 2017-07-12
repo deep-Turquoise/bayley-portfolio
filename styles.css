@@ -24,6 +24,11 @@
     text-overflow: clip;
 }
 
+.category_Block {
+    width: 100%;
+    height: 100%;
+}
+
 .category_Block :hover {
     cursor: pointer;
     background-color: red;
