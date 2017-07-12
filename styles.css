@@ -8,8 +8,9 @@
 .category_Panel {
     position: absolute;
     left: 0;
+    top: 0;
     height: 100%;
-    width: 20%;
+    width: auto;
     background-color: blue;
 }
 
@@ -21,10 +22,12 @@
 }
 
 .project_Panel {
+    position: absolute;
+    right: 0;
+    top: 0;
     height: 100%;
     width: auto;
     background-color: red;
-    position: absolute;
 }
 
 .project {
