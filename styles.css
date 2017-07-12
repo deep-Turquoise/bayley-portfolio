@@ -59,7 +59,6 @@
     width: 80%;
     background-color: rgba(255, 0, 0, 0.7);
     visibility: hidden;
-    line-height: 1;
 }
 
 .project_Block_Overlay h1, p {
@@ -68,7 +67,7 @@
 }
 
 .project_Block_Overlay h1 {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .project_Block_Overlay p {
