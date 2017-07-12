@@ -34,13 +34,18 @@
     right: 0;
     top: 0;
     height: 100%;
-    width: 80%;
+    width: 82%;
 }
 
 .project_Block {
     display: inline-block;
     height: 270px;
     width: 480px;
+}
+
+.project_Block img {
+    width: 100%;
+    height: 100%;
 }
 
 .project_Block_Overlay {
