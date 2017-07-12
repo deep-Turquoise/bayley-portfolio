@@ -57,7 +57,7 @@
     left: 5px;
     height: 80%;
     width: 70%;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.3);
     visibility: hidden;
 }
 
@@ -74,7 +74,7 @@
     font-size: 15px;
 }
 
-.project_Block_Overlay:hover {
+.project_Block:hover .project_Block_Overlay{
     visibility: visible;
     cursor: pointer;
 }
