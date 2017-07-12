@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+</head>
+<body onload="firstLoad()">
+    <div id="category_Panel" class="category_Panel"></div>
+    <div id= "project_Panel" class="project_Panel"></div>
+</body>
+<script>
+    function getProjects(category) {
+        if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); }
+        else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
+
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("project_Panel").innerHTML = this.responseText;
+            }
+        }
+        xmlhttp.open("GET", "php/allocate.php?instructions=allocate_Projects&category_name=" + category, true);
+        xmlhttp.send();
+    }
+
+    function getCategories() {
+        if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); }
+        else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
+
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("category_Panel").innerHTML = this.responseText;
+            }
+        }
+        xmlhttp.open("GET", "php/allocate.php?instructions=categories", true);
+        xmlhttp.send();
+    }
+
+    function firstLoad() {
+        getCategories();
+        getProjects("Featured");
+    }
+</script>
+</html>
