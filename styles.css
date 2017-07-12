@@ -100,7 +100,6 @@
     left: 0;
     background-color: red;
     visibility: hidden;
-    z-index: 1;
 }
 
 .modal_content {
