@@ -3,6 +3,7 @@
 function get_Categories(){
     $conn = new mysqli("localhost", "root", "airpolo3", "intranet_Bayley");
     if ($conn->connect_error) { print "Database Connection Error"; }
+    print "got here";
     $sql = "SELECT * FROM category";
     $result = $conn->query($sql);
 
