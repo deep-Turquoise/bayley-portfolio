@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a1b98e8-2591-4b93-bb93-4346dae537a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend.php" afterPath="$PROJECT_DIR$/backend.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles.css" afterPath="$PROJECT_DIR$/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,15 +33,15 @@
           <file leaf-file-name="backend.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="549">
-                  <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+                <state relative-caret-position="465">
+                  <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
                   <folding>
-                    <element signature="n#return_First_File_Name#0;n#!!top" expanded="false" />
                     <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-                    <marker date="1499902369000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
-                    <marker date="1499902369000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
-                    <marker date="1499902369000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
-                    <marker date="1499902369000" expanded="true" signature="2984:3013" ph="..." />
+                    <marker date="1499902761000" expanded="true" signature="333:355" ph="SELECT * FRO... projects" />
+                    <marker date="1499902761000" expanded="true" signature="654:657" ph="..." />
+                    <marker date="1499902761000" expanded="true" signature="1412:1436" ph="SELECT * FRO... categories" />
+                    <marker date="1499902761000" expanded="true" signature="2121:2143" ph="SELECT * FRO... projects" />
+                    <marker date="1499902761000" expanded="true" signature="3362:3391" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -53,8 +54,8 @@
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="564">
-                  <caret line="101" column="23" lean-forward="false" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+                <state relative-caret-position="504">
+                  <caret line="97" column="16" lean-forward="true" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -79,9 +80,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/backend.php" />
+        <option value="$PROJECT_DIR$/styles.css" />
       </list>
     </option>
   </component>
@@ -221,12 +222,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499888090782</updated>
-      <workItem from="1499888092250" duration="10967000" />
+      <workItem from="1499888092250" duration="11504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10967000" />
+    <option name="totallyTimeSpent" value="11504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -272,14 +273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="101" column="23" lean-forward="false" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -293,16 +286,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state relative-caret-position="465">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
           <folding>
-            <element signature="n#return_First_File_Name#0;n#!!top" expanded="false" />
             <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-            <marker date="1499902369000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
-            <marker date="1499902369000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
-            <marker date="1499902369000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
-            <marker date="1499902369000" expanded="true" signature="2984:3013" ph="..." />
+            <marker date="1499902761000" expanded="true" signature="333:355" ph="SELECT * FRO... projects" />
+            <marker date="1499902761000" expanded="true" signature="654:657" ph="..." />
+            <marker date="1499902761000" expanded="true" signature="1412:1436" ph="SELECT * FRO... categories" />
+            <marker date="1499902761000" expanded="true" signature="2121:2143" ph="SELECT * FRO... projects" />
+            <marker date="1499902761000" expanded="true" signature="3362:3391" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="97" column="16" lean-forward="true" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
