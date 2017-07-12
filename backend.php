@@ -66,6 +66,8 @@ function get_Projects($category) {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             if($row['category'] == $category) {
+                $cur_Category = $row['category'];
+                $cur_id = $row['id'];
                 print "<div class=\"project_Block\" style=\"
                             animation: fadein 1200ms;
                             animation-delay: " . $delay . "s;
@@ -76,10 +78,8 @@ function get_Projects($category) {
                             -o-animation: fadein 3200ms; 
                             opacity: 0;
                             animation-fill-mode: forwards;
-                            \">";
-                $cur_Category = $row['category'];
-                $cur_id = $row['id'];
-                print "<a onclick=\"openModal('$cur_Category', '$cur_id')\">";
+                            \" onclick=\"openModal('$cur_Category', '$cur_id')\">";
+                //print "<a onclick=\"openModal('$cur_Category', '$cur_id')\">";
 
                 $dir = "projects/" .  $row['category'] . "/" . $row['id']; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
