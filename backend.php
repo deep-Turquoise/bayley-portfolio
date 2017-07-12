@@ -11,10 +11,15 @@ function get_Categories(){
     $sql = "SELECT * FROM categories";
     $result = $conn->query($sql);
 
+    //Just so we can make featured first
+    print "<a onclick=\"getProjects('Featured')\"><div class=\"category_Block\">Featured</div></a>";
+
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             $name = $row['name'];
-            print "<a onclick=\"getProjects('$name')\"><div class=\"category_Block\">$name</div></a>";
+            if($name != "Featured") {
+                print "<a onclick=\"getProjects('$name')\"><div class=\"category_Block\">$name</div></a>";
+            }
         }
     }
     $conn->close();
