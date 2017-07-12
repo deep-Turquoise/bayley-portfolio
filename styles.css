@@ -24,7 +24,7 @@
     text-overflow: clip;
 }
 
-.category_Block a:hover {
+.category_Block hover {
     cursor: pointer;
     background-color: red;
     color: white;
