@@ -26,7 +26,7 @@ function get_Projects($category) {
     $sql = "SELECT * FROM projects";
     $result = $conn->query($sql);
 
-    $fade_in_time = 0; // used for increment the face in time...
+    $delay = 0; // used for increment the face in time...
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
@@ -36,8 +36,17 @@ function get_Projects($category) {
                 $dir = "projects/" .  $row['category'] . "/" . $row['id']; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
 
-
-                print "<img src=\"$first_Image_Dir\">";
+                print "<img src=\"$first_Image_Dir\" style=\"
+                            animation: fadein 1200ms;
+                            animation-delay: " . $delay . "s;
+                            -moz-animation: fadein 1200ms; /* Firefox */
+                            -moz-animation-delay: " . $delay . "s;
+                            -webkit-animation: fadein 1200ms; /* Safari and Chrome */
+                            -webkit-animation-delay: " . $delay . "s;
+                            -o-animation: fadein 3200ms; /* Opera */
+                            opacity: 0;
+                            animation-fill-mode: forwards;
+                            \">";
 
                 print "<div class=\"project_Block_Overlay\">";
                 print "<h1>" . $row['project_name'] . "</h1>";
@@ -46,7 +55,7 @@ function get_Projects($category) {
                 print "</div>"; // END overlay
                 print "</a></div>"; // END block
 
-                ++ $fade_in_time;
+                $delay += 0.1;
             }
         }
     }
