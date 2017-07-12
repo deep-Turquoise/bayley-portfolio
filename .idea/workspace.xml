@@ -32,15 +32,15 @@
           <file leaf-file-name="backend.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="65" column="57" lean-forward="true" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
+                <state relative-caret-position="549">
+                  <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
                   <folding>
                     <element signature="n#return_First_File_Name#0;n#!!top" expanded="false" />
                     <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-                    <marker date="1499902324000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
-                    <marker date="1499902324000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
-                    <marker date="1499902324000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
-                    <marker date="1499902324000" expanded="true" signature="2990:3019" ph="..." />
+                    <marker date="1499902369000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
+                    <marker date="1499902369000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
+                    <marker date="1499902369000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
+                    <marker date="1499902369000" expanded="true" signature="2984:3013" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -221,12 +221,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499888090782</updated>
-      <workItem from="1499888092250" duration="10930000" />
+      <workItem from="1499888092250" duration="10967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10930000" />
+    <option name="totallyTimeSpent" value="10967000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -293,15 +293,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="65" column="57" lean-forward="true" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
+        <state relative-caret-position="549">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
             <element signature="n#return_First_File_Name#0;n#!!top" expanded="false" />
             <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-            <marker date="1499902324000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
-            <marker date="1499902324000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
-            <marker date="1499902324000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
-            <marker date="1499902324000" expanded="true" signature="2990:3019" ph="..." />
+            <marker date="1499902369000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
+            <marker date="1499902369000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
+            <marker date="1499902369000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
+            <marker date="1499902369000" expanded="true" signature="2984:3013" ph="..." />
           </folding>
         </state>
       </provider>

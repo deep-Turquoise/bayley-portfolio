@@ -69,7 +69,7 @@ function get_Projects($category) {
                             \">";
                 $cur_Category = $row['category'];
                 $cur_id = $row['id'];
-                print "<a onclick=\"openModal('\"$cur_Category\", \"$cur_id\"')\">";
+                print "<a onclick=\"openModal('$cur_Category', '$cur_id')\">";
 
                 $dir = "projects/" .  $row['category'] . "/" . $row['id']; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
