@@ -1,8 +1,8 @@
 <?php
 
 function return_First_File_Name($dir) {
-    $contents = file($dir);
-    return $contents[0];
+    $contents = scandir($dir);
+    return $contents[2];
 }
 
 function get_Categories(){
