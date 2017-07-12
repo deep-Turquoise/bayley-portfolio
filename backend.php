@@ -39,14 +39,14 @@ function get_Projects($category) {
                 print "<img src=\"$first_Image_Dir\" style=\"
                             animation: fadein 1200ms;
                             animation-delay: " . $delay . "s;
-                            -moz-animation: fadein 1200ms; /* Firefox */
+                            -moz-animation: fadein 1200ms;
                             -moz-animation-delay: " . $delay . "s;
-                            -webkit-animation: fadein 1200ms; /* Safari and Chrome */
+                            -webkit-animation: fadein 1200ms;
                             -webkit-animation-delay: " . $delay . "s;
-                            -o-animation: fadein 3200ms; /* Opera */
+                            -o-animation: fadein 3200ms; 
                             opacity: 0;
                             animation-fill-mode: forwards;
-                            \">";
+                            \"></img>";
 
                 print "<div class=\"project_Block_Overlay\">";
                 print "<h1>" . $row['project_name'] . "</h1>";
