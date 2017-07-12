@@ -42,6 +42,7 @@
     display: inline-block;
     height: 270px;
     width: 480px;
+    position: relative;
 }
 
 .project_Block_Overlay {
