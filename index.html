@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Sample</title>
+    <link href='//fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body onload="firstLoad()">
     <div id="category_Panel" class="category_Panel"></div>
@@ -18,7 +20,7 @@
                 document.getElementById("project_Panel").innerHTML = this.responseText;
             }
         }
-        xmlhttp.open("GET", "php/allocate.php?instructions=allocate_Projects&category_name=" + category, true);
+        xmlhttp.open("GET", "backend.php?instructions=allocate_Projects&category_name=" + category, true);
         xmlhttp.send();
     }
 
@@ -31,7 +33,7 @@
                 document.getElementById("category_Panel").innerHTML = this.responseText;
             }
         }
-        xmlhttp.open("GET", "php/allocate.php?instructions=categories", true);
+        xmlhttp.open("GET", "backend.php?instructions=categories", true);
         xmlhttp.send();
     }
 
