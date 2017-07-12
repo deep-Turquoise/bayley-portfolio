@@ -29,13 +29,12 @@
           <file leaf-file-name="backend.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="624">
-                  <caret line="48" column="39" lean-forward="true" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+                <state relative-caret-position="420">
+                  <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
                   <folding>
-                    <marker date="1499900742000" expanded="true" signature="323:347" ph="SELECT * FRO... categories" />
-                    <marker date="1499900742000" expanded="true" signature="833:855" ph="SELECT * FRO... projects" />
-                    <marker date="1499900742000" expanded="true" signature="1337:1937" ph="..." />
-                    <marker date="1499900742000" expanded="true" signature="1375:1935" ph="..." />
+                    <marker date="1499900817000" expanded="true" signature="323:347" ph="SELECT * FRO... categories" />
+                    <marker date="1499900817000" expanded="true" signature="833:855" ph="SELECT * FRO... projects" />
+                    <marker date="1499900817000" expanded="true" signature="1910:1939" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -216,12 +215,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499888090782</updated>
-      <workItem from="1499888092250" duration="9370000" />
+      <workItem from="1499888092250" duration="9437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9370000" />
+    <option name="totallyTimeSpent" value="9437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -285,13 +284,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="48" column="39" lean-forward="true" selection-start-line="48" selection-start-column="39" selection-end-line="48" selection-end-column="39" />
+        <state relative-caret-position="420">
+          <caret line="28" column="40" lean-forward="true" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
           <folding>
-            <marker date="1499900742000" expanded="true" signature="323:347" ph="SELECT * FRO... categories" />
-            <marker date="1499900742000" expanded="true" signature="833:855" ph="SELECT * FRO... projects" />
-            <marker date="1499900742000" expanded="true" signature="1337:1937" ph="..." />
-            <marker date="1499900742000" expanded="true" signature="1375:1935" ph="..." />
+            <marker date="1499900817000" expanded="true" signature="323:347" ph="SELECT * FRO... categories" />
+            <marker date="1499900817000" expanded="true" signature="833:855" ph="SELECT * FRO... projects" />
+            <marker date="1499900817000" expanded="true" signature="1910:1939" ph="..." />
           </folding>
         </state>
       </provider>
