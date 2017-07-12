@@ -7,7 +7,7 @@
 
 .category_Panel {
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     height: 100%;
     width: 15%;
@@ -32,7 +32,7 @@
 .project_Panel {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 10px;
     height: 100%;
     width: 82%;
 }
