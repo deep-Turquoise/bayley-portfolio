@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a1b98e8-2591-4b93-bb93-4346dae537a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend.php" afterPath="$PROJECT_DIR$/backend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles.css" afterPath="$PROJECT_DIR$/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +16,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.54010415">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="66" lean-forward="false" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
                   <folding>
                     <element signature="e#1208#1710#0" expanded="false" />
                     <element signature="e#1741#2211#0" expanded="false" />
@@ -31,18 +29,18 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="backend.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="backend.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="175">
-                  <caret line="49" column="64" lean-forward="true" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+                <state relative-caret-position="399">
+                  <caret line="65" column="57" lean-forward="true" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
                   <folding>
                     <element signature="n#return_First_File_Name#0;n#!!top" expanded="false" />
                     <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-                    <marker date="1499902166000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
-                    <marker date="1499902166000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
-                    <marker date="1499902166000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
-                    <marker date="1499902166000" expanded="true" signature="2982:3011" ph="..." />
+                    <marker date="1499902324000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
+                    <marker date="1499902324000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
+                    <marker date="1499902324000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
+                    <marker date="1499902324000" expanded="true" signature="2990:3019" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -81,9 +79,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/backend.php" />
         <option value="$PROJECT_DIR$/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/backend.php" />
       </list>
     </option>
   </component>
@@ -223,12 +221,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499888090782</updated>
-      <workItem from="1499888092250" duration="10850000" />
+      <workItem from="1499888092250" duration="10930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10850000" />
+    <option name="totallyTimeSpent" value="10930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -282,28 +280,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend.php">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="49" column="64" lean-forward="true" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
+        <state relative-caret-position="225">
+          <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
           <folding>
-            <element signature="n#return_First_File_Name#0;n#!!top" expanded="false" />
-            <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-            <marker date="1499902166000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
-            <marker date="1499902166000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
-            <marker date="1499902166000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
-            <marker date="1499902166000" expanded="true" signature="2982:3011" ph="..." />
+            <element signature="e#1208#1710#0" expanded="false" />
+            <element signature="e#1741#2211#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/backend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="66" lean-forward="false" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+        <state relative-caret-position="399">
+          <caret line="65" column="57" lean-forward="true" selection-start-line="65" selection-start-column="57" selection-end-line="65" selection-end-column="57" />
           <folding>
-            <element signature="e#1208#1710#0" expanded="false" />
-            <element signature="e#1741#2211#0" expanded="false" />
+            <element signature="n#return_First_File_Name#0;n#!!top" expanded="false" />
+            <element signature="n#get_Categories#0;n#!!top" expanded="false" />
+            <marker date="1499902324000" expanded="true" signature="333:357" ph="SELECT * FRO... categories" />
+            <marker date="1499902324000" expanded="true" signature="1034:1058" ph="SELECT * FRO... categories" />
+            <marker date="1499902324000" expanded="true" signature="1743:1765" ph="SELECT * FRO... projects" />
+            <marker date="1499902324000" expanded="true" signature="2990:3019" ph="..." />
           </folding>
         </state>
       </provider>
