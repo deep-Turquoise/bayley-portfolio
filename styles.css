@@ -6,11 +6,9 @@
 }
 
 .category_Panel {
-    position: absolute;
-    left: 0;
-    top: 0;
+    display: inline;
     height: 100%;
-    width: auto;
+    width: 20%;
     background-color: blue;
 }
 
@@ -22,9 +20,7 @@
 }
 
 .project_Panel {
-    position: absolute;
-    right: 0;
-    top: 0;
+    display: inline;
     height: 100%;
     width: auto;
     background-color: red;
