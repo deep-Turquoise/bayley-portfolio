@@ -55,7 +55,7 @@ function get_Projects($category) {
                 print "</div>"; // END overlay
                 print "</a></div>"; // END block
 
-                $delay += 0.2;
+                $delay += 0.15;
             }
         }
     }
