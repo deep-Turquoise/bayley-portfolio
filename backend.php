@@ -33,7 +33,7 @@ function get_Projects($category) {
                 print "<a><div class=\"category_Block\">";
 
                 $dir = "projects/" .  $row['category'] . "/" . $row['id']; // current directory
-                $first_Image_Dir = return_First_File_Name($dir);
+                $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
 
 
                 print "<img src=\"$first_Image_Dir\">";
