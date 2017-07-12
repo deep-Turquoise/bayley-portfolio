@@ -2,9 +2,7 @@
 
 function return_First_File_Name($dir) {
     $contents = scandir($dir);
-    print $contents;
-    print $contents[2];
-    return $contents[2];
+    return $contents[2]; // second element skips . and ..
 }
 
 function get_Categories(){
