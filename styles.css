@@ -52,9 +52,8 @@
 }
 
 .project_Block_Overlay {
-    position: absolute;
-    top: 5px;
-    left: 5px;
+    margin-top: 0;
+    margin-left: 0;
     height: 80%;
     width: 70%;
     background-color: rgba(255, 0, 0, 0.3);
