@@ -35,14 +35,12 @@
     top: 0;
     height: 100%;
     width: 84%;
-    background-color: red;
 }
 
 .project_Block {
     display: inline-block;
     height: 270px;
     width: 480px;
-    position: relative;
 }
 
 .project_Block_Overlay {
