@@ -38,10 +38,16 @@
     background-color: red;
 }
 
-.project {
-
+.project_Block {
+    display: inline-block;
+    height: 270px;
+    width: auto;
 }
 
-.project_Overlay {
-
+.project_Block_Overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: red;
+    display: hidden;
 }

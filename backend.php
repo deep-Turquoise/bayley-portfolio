@@ -1,5 +1,10 @@
 <?php
 
+function return_First_File_Name($dir) {
+    $contents = file($dir);
+    return $contents[0];
+}
+
 function get_Categories(){
     $conn = new mysqli("localhost", "root", "airpolo3", "intranet_Bayley");
     if ($conn->connect_error) { print "Database Connection Error"; }
@@ -12,11 +17,37 @@ function get_Categories(){
         }
     }
     $conn->close();
-
 }
 
 function get_Projects($category) {
+    $conn = new mysqli("localhost", "root", "airpolo3", "intranet_Bayley");
+    if ($conn->connect_error) { print "Database Connection Error"; }
+    $sql = "SELECT * FROM projects";
+    $result = $conn->query($sql);
 
+    $fade_in_time = 0; // used for increment the face in time...
+
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            print "<a><div class=\"category_Block\">";
+
+            $dir = "projects/" .  $row['category'] . "/" . $row['id']; // current directory
+            $first_Image_Dir = return_First_File_Name($dir);
+
+
+            print "<img src=\"$first_Image_Dir\">";
+
+            print "<div class=\"project_Block_Overlay\">";
+            print "<h1>" . $row['project_name'] . "</h1>";
+            print "<p>" . $row['project_location'] . "</p>";
+
+            print "</div>"; // END overlay
+            print "</div></a>"; // END block
+
+            ++ $fade_in_time;
+        }
+    }
+    $conn->close();
 }
 
 $instructions = $_GET['instructions'];
