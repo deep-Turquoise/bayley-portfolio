@@ -30,7 +30,7 @@ function get_Projects($category) {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             if($row['category'] == $category) {
-                print "<a><div class=\"category_Block\">";
+                print "<a><div class=\"project_Block\">";
 
                 $dir = "projects/" .  $row['category'] . "/" . $row['id']; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
