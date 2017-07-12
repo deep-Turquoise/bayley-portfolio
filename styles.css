@@ -52,5 +52,10 @@
     height: 80%;
     width: 70%;
     background-color: red;
-    display: hidden;
+    visibility: hidden;
+}
+
+.project_Block_Overlay:hover {
+    visibility: visible;
+    cursor: pointer;
 }
