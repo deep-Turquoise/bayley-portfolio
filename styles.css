@@ -39,8 +39,10 @@
 
 .project_Block {
     display: inline-block;
-    height: 270px;
-    width: 480px;
+    height: 216px;
+    width: 384px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .project_Block img {
