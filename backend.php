@@ -30,7 +30,7 @@ function get_Projects($category) {
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             if($row['category'] == $category) {
-                print "<a><div class=\"project_Block\">";
+                print "<div class=\"project_Block\"><a>";
 
                 $dir = "projects/" .  $row['category'] . "/" . $row['id']; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
@@ -43,7 +43,7 @@ function get_Projects($category) {
                 print "<p>" . $row['project_location'] . "</p>";
 
                 print "</div>"; // END overlay
-                print "</div></a>"; // END block
+                print "</a></div>"; // END block
 
                 ++ $fade_in_time;
             }
