@@ -55,6 +55,19 @@
     visibility: hidden;
 }
 
+.project_Block_Overlay h1, p {
+    color: white;
+    overflow: hidden;
+}
+
+.project_Block_Overlay h1 {
+    font-size: 20px;
+}
+
+.project_Block_Overlay p {
+    font-size: 15px;
+}
+
 .project_Block_Overlay:hover {
     visibility: visible;
     cursor: pointer;
