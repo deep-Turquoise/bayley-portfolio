@@ -46,6 +46,7 @@
     margin-right: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
 
 .project_Block img {
@@ -60,7 +61,8 @@
     height: 85%;
     width: 80%;
     background-color: rgba(255, 0, 0, 0.7);
-    visibility: hidden;
+    opacity: 0;
+    transition:opacity 0.5s ease;
     text-indent: 10px;
 }
 
@@ -80,8 +82,7 @@
 }
 
 .project_Block:hover .project_Block_Overlay{
-    visibility: visible;
-    cursor: pointer;
+    opacity: 1;
 }
 
 @keyframes fadein {
@@ -153,7 +154,7 @@
     background-color: rgba(0,0,0,0.8);
     opacity: 0;
     transition:opacity 0.5s ease;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .modal_content:hover .modal_image_overlay{
