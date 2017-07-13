@@ -108,7 +108,7 @@
 
 .modal_content {
     position: absolute;
-    margin: auto;
+    top: 10%;
     left: 20%;
     width: 60%;
     height: auto;
