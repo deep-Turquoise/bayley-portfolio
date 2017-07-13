@@ -140,3 +140,19 @@
     height: 100%;
     width: 100%;
 }
+
+.modal_image_overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    visibility: hidden;
+}
+
+.modal_content:hover .modal_image_overlay{
+    visibility: visible;
+}
