@@ -120,7 +120,7 @@
 }
 
 .modal_left_arrow {
-    position: absolute;
+    position: fixed;
     left: 10%;
     top: 40%;
     height: 50px;
@@ -128,7 +128,7 @@
 }
 
 .modal_right_arrow {
-    position: absolute;
+    position: fixed;
     right: 10%;
     top: 40%;
     height: 50px;
