@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a1b98e8-2591-4b93-bb93-4346dae537a8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend.php" afterPath="$PROJECT_DIR$/backend.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles.css" afterPath="$PROJECT_DIR$/styles.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,15 +45,15 @@
           <file leaf-file-name="backend.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+                <state relative-caret-position="405">
+                  <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
                   <folding>
                     <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-                    <marker date="1499968624000" expanded="true" signature="333:355" ph="SELECT * FRO... projects" />
-                    <marker date="1499968624000" expanded="true" signature="654:657" ph="..." />
-                    <marker date="1499968624000" expanded="true" signature="1508:1532" ph="SELECT * FRO... categories" />
-                    <marker date="1499968624000" expanded="true" signature="2217:2239" ph="SELECT * FRO... projects" />
-                    <marker date="1499968624000" expanded="true" signature="3511:3540" ph="..." />
+                    <marker date="1499968814000" expanded="true" signature="333:355" ph="SELECT * FRO... projects" />
+                    <marker date="1499968814000" expanded="true" signature="654:657" ph="..." />
+                    <marker date="1499968814000" expanded="true" signature="1508:1532" ph="SELECT * FRO... categories" />
+                    <marker date="1499968814000" expanded="true" signature="2217:2239" ph="SELECT * FRO... projects" />
+                    <marker date="1499968814000" expanded="true" signature="3511:3540" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -65,9 +66,11 @@
           <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/styles.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="789">
-                  <caret line="126" column="16" lean-forward="true" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
-                  <folding />
+                <state relative-caret-position="699">
+                  <caret line="120" column="2" lean-forward="false" selection-start-line="120" selection-start-column="2" selection-end-line="120" selection-end-column="2" />
+                  <folding>
+                    <marker date="1499968814000" expanded="true" signature="1975:2256" ph="/*...*/" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -241,12 +244,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499888090782</updated>
       <workItem from="1499888092250" duration="12768000" />
-      <workItem from="1499963195312" duration="3542000" />
+      <workItem from="1499963195312" duration="3637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16310000" />
+    <option name="totallyTimeSpent" value="16405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -310,11 +313,11 @@
           <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding>
             <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-            <marker date="1499968624000" expanded="true" signature="333:355" ph="SELECT * FRO... projects" />
-            <marker date="1499968624000" expanded="true" signature="654:657" ph="..." />
-            <marker date="1499968624000" expanded="true" signature="1508:1532" ph="SELECT * FRO... categories" />
-            <marker date="1499968624000" expanded="true" signature="2217:2239" ph="SELECT * FRO... projects" />
-            <marker date="1499968624000" expanded="true" signature="3511:3540" ph="..." />
+            <marker date="1499968814000" expanded="true" signature="333:355" ph="SELECT * FRO... projects" />
+            <marker date="1499968814000" expanded="true" signature="654:657" ph="..." />
+            <marker date="1499968814000" expanded="true" signature="1508:1532" ph="SELECT * FRO... categories" />
+            <marker date="1499968814000" expanded="true" signature="2217:2239" ph="SELECT * FRO... projects" />
+            <marker date="1499968814000" expanded="true" signature="3511:3540" ph="..." />
           </folding>
         </state>
       </provider>
@@ -323,7 +326,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1499968814000" expanded="true" signature="1975:2256" ph="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -341,24 +346,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        <state relative-caret-position="405">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding>
             <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-            <marker date="1499968624000" expanded="true" signature="333:355" ph="SELECT * FRO... projects" />
-            <marker date="1499968624000" expanded="true" signature="654:657" ph="..." />
-            <marker date="1499968624000" expanded="true" signature="1508:1532" ph="SELECT * FRO... categories" />
-            <marker date="1499968624000" expanded="true" signature="2217:2239" ph="SELECT * FRO... projects" />
-            <marker date="1499968624000" expanded="true" signature="3511:3540" ph="..." />
+            <marker date="1499968814000" expanded="true" signature="333:355" ph="SELECT * FRO... projects" />
+            <marker date="1499968814000" expanded="true" signature="654:657" ph="..." />
+            <marker date="1499968814000" expanded="true" signature="1508:1532" ph="SELECT * FRO... categories" />
+            <marker date="1499968814000" expanded="true" signature="2217:2239" ph="SELECT * FRO... projects" />
+            <marker date="1499968814000" expanded="true" signature="3511:3540" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="126" column="16" lean-forward="true" selection-start-line="126" selection-start-column="16" selection-end-line="126" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="699">
+          <caret line="120" column="2" lean-forward="false" selection-start-line="120" selection-start-column="2" selection-end-line="120" selection-end-column="2" />
+          <folding>
+            <marker date="1499968814000" expanded="true" signature="1975:2256" ph="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>

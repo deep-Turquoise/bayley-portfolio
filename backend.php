@@ -20,12 +20,12 @@ function openModal($category, $id) {
                 $dir = "projects/" .  $category . "/" . $id; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
                 print "<img src=\"left.png\">";
-                print "<img src=\"right.png\">";
                 print "<img src=\"$first_Image_Dir\">";
 
                 print "<div class=\"modal_image_overlay\">";
                 print "<h1>" . $row['project_name'] . "</h1>";
                 print "<p>" . $row['project_location'] . "</p>";
+                print "<img src=\"right.png\">";
 
                 print "</div>"; // END overlay
                 print "</a></div>"; // END block
