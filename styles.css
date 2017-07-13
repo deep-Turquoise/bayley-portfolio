@@ -120,13 +120,13 @@
 }
 
 .modal_left_arrow {
-    position: absolute;
+    position: fixed;
     left: 7%;
     top: 40%;
 }
 
 .modal_right_arrow {
-    position: absolute;
+    position: fixed;
     right: 7%;
     top: 40%;
 }
