@@ -113,6 +113,7 @@
     width: 60%;
     height: auto;
     max-height: 80%;
+    overflow: hidden;
 }
 
 .modal_content img {
