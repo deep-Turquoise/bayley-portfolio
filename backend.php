@@ -17,15 +17,19 @@ function openModal($category, $id) {
         while($row = $result->fetch_assoc()) {
             if($row['category'] == $category && $row['id'] == $id) {
                 print "<div class=\"modal_content\">";
+
+
+                print "<img src=\"left.png\" class='\"modal_left_arrow\"'>"; // left/next image arrow
+
                 $dir = "projects/" .  $category . "/" . $id; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
-                print "<img src=\"left.png\">";
                 print "<img src=\"$first_Image_Dir\">";
 
                 print "<div class=\"modal_image_overlay\">";
                 print "<h1>" . $row['project_name'] . "</h1>";
                 print "<p>" . $row['project_location'] . "</p>";
-                print "<img src=\"right.png\">";
+
+                print "<img src=\"right.png\" class='\"modal_right_arrow\">"; // right arrow
 
                 print "</div>"; // END overlay
                 print "</a></div>"; // END block
