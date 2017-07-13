@@ -78,7 +78,7 @@ function get_Projects($category) {
                             -o-animation: fadein 3200ms; 
                             opacity: 0;
                             animation-fill-mode: forwards;
-                            \" onclick=\"openModal('$cur_Category', '$cur_id')\">";
+                            \" onclick=\"openModal('$cur_Category', '$cur_id');\">";
                 //print "<a onclick=\"openModal('$cur_Category', '$cur_id')\">";
 
                 $dir = "projects/" .  $row['category'] . "/" . $row['id']; // current directory
