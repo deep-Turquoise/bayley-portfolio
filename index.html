@@ -87,5 +87,14 @@
         getCategories();
         getProjects("Featured");
     }
+
+    document.getElementById("modal").onclick = function (event) {
+        if(event.target === document.getElementById("modal")
+            && event.target !== document.getElementsByClassName("modal_left_arrow")
+            && event.target !== document.getElementsByClassName("modal_right_arrow")
+            && event.target !== document.getElementById("modal_content")) {
+                closeModal();
+        }
+    }
 </script>
 </html>

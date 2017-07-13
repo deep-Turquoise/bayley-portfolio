@@ -43,7 +43,7 @@ function openModal($category, $id) {
                 print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$first_Image_Dir');\"><img src=\"left.png\"></div>"; // left/next image arrow
                 print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$first_Image_Dir');\"><img src=\"right.png\"></div>"; // right arrow
 
-                print "<div class=\"modal_content\">";
+                print "<div id=\"modal_content\" class=\"modal_content\">";
 
                 print "<img id=\"cur_modal_image\" src=\"$first_Image_Dir\">";
 
