@@ -132,8 +132,8 @@
 }
 
 .modal_left_arrow, .modal_right_arrow {
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
 }
 
 .modal_left_arrow img, .modal_right_arrow img {
