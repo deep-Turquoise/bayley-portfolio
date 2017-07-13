@@ -120,18 +120,18 @@
 }
 
 .modal_left_arrow {
-    left: 10%;
+    position: absolute;
+    left: 7%;
+    top: 40%;
 }
 
 .modal_right_arrow {
-    right: 10%;
+    position: absolute;
+    right: 7%;
+    top: 40%;
 }
 
 .modal_left_arrow, .modal_right_arrow {
-    position: absolute;
-    height: 100%;
-    width: auto;
-    top: 40%;
     height: 20px;
     width: 20px;
 }
