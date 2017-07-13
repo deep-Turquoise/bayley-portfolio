@@ -19,7 +19,8 @@ function openModal($category, $id) {
                 print "<div class=\"modal_content\">";
                 $dir = "projects/" .  $category . "/" . $id; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
-
+                print "<img src=\"left.png\">";
+                print "<img src=\"right.png\">";
                 print "<img src=\"$first_Image_Dir\">";
 
                 print "<div class=\"modal_image_overlay\">";
