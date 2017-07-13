@@ -114,7 +114,7 @@
 }
 
 .modal_content img {
-    position: relative;
+    position: absolute;
     margin: auto;
     width: 100%;
     height: auto;
