@@ -112,6 +112,12 @@
     height: auto;
 }
 
+.modal_content img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
 .modal_left_arrow {
     position: absolute;
     left: 10%;
