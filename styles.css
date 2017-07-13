@@ -98,8 +98,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: red;
-    visibility: hidden;
+    background-color: rgba(0,0,0,0.8);
 }
 
 .modal_content {
