@@ -1,5 +1,25 @@
 <?php
 
+function backImage($category, $id, $cur_img) {
+    $dir = "projects/$category/$id";
+    $contents = scandir($dir);
+    for($x=0; $x < count($contents); ++$x) {
+        if("$dir/$contents[$x]" == $cur_img) {
+            if($x == 2) {
+                $top_image_num = count($contents);
+                print "$dir/$contents[$top_image_num]";
+            } else {
+                $num = $x - 1;
+                print "$dir/$contents[$num]";
+            }
+        }
+    }
+}
+
+function nextImage($category, $id, $cur_img) {
+
+}
+
 function return_First_File_Name($dir) {
     $contents = scandir($dir);
     return $contents[2]; // second element skips . and ..
@@ -17,14 +37,15 @@ function openModal($category, $id) {
         while($row = $result->fetch_assoc()) {
             if($row['category'] == $category && $row['id'] == $id) {
 
-                print "<div class=\"modal_left_arrow\"><img src=\"left.png\"></div>"; // left/next image arrow
-                print "<div class=\"modal_right_arrow\"><img src=\"right.png\"></div>"; // right arrow
+                $dir = "projects/" .  $category . "/" . $id; // current directory
+                $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
+
+                print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$first_Image_Dir');\"><img src=\"left.png\"></div>"; // left/next image arrow
+                print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$first_Image_Dir');\"><img src=\"right.png\"></div>"; // right arrow
 
                 print "<div class=\"modal_content\">";
 
-                $dir = "projects/" .  $category . "/" . $id; // current directory
-                $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
-                print "<img src=\"$first_Image_Dir\">";
+                print "<img id=\"cur_modal_image\" src=\"$first_Image_Dir\">";
 
                 print "<div class=\"modal_image_overlay\">";
                 print "<h1>" . $row['project_name'] . "</h1>";
@@ -108,7 +129,10 @@ function get_Projects($category) {
 $instructions = $_GET['instructions'];
 $category = $_GET['category_name'];
 $id = $_GET['id'];
+$cur_img = $_GET['img'];
 
 if($instructions == "categories") { get_Categories(); }
 if($instructions == "allocate_Projects") { get_Projects($category); }
 if($instructions == "openModal") { openModal($category, $id); }
+if($instructions == "backImage") { backImage($category, $id, $cur_img); }
+if($instructions == "nextImage") { nextImage($category, $id, $cur_img); }
