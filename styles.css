@@ -137,6 +137,7 @@
     height: 40px;
     width: 40px;
     cursor: pointer;
+    z-index: 1;
 }
 
 .modal_left_arrow img, .modal_right_arrow img {
