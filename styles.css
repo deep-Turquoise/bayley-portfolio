@@ -117,7 +117,7 @@
 
 .modal_content img {
     width: 100%;
-    height: auto;
+    max-height: 100%;
 }
 
 .modal_left_arrow {
