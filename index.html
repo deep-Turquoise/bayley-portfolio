@@ -13,13 +13,13 @@
 </body>
 <script>
     function openModal(cur_Category, cur_id) {
+        //document.getElementById("modal").style.visibility = true;
 
         if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); }
         else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
 
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                //document.getElementById("modal").style.visibility = true;
                 document.getElementById("modal").innerHTML = this.responseText;
             }
         }
