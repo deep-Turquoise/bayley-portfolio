@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a1b98e8-2591-4b93-bb93-4346dae537a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend.php" afterPath="$PROJECT_DIR$/backend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,32 +25,31 @@
     <favorites_list name="bayley-portfolio" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46876758">
+    <splitter split-orientation="horizontal" split-proportion="0.5177265">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="backend.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="backend.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="616">
-                  <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="46" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
                   <folding>
                     <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-                    <element signature="n#get_Projects#0;n#!!top" expanded="false" />
-                    <marker date="1499975279000" expanded="true" signature="855:877" ph="SELECT * FRO... projects" />
-                    <marker date="1499975279000" expanded="true" signature="1700:1703" ph="..." />
-                    <marker date="1499975279000" expanded="true" signature="2322:2346" ph="SELECT * FRO... categories" />
-                    <marker date="1499975279000" expanded="true" signature="3031:3053" ph="SELECT * FRO... projects" />
-                    <marker date="1499975279000" expanded="true" signature="4325:4354" ph="..." />
-                    <marker date="1499975279000" expanded="true" signature="4418:4457" ph="..." />
+                    <marker date="1499976215000" expanded="true" signature="1294:1316" ph="SELECT * FRO... projects" />
+                    <marker date="1499976215000" expanded="true" signature="2139:2142" ph="..." />
+                    <marker date="1499976215000" expanded="true" signature="2761:2785" ph="SELECT * FRO... categories" />
+                    <marker date="1499976215000" expanded="true" signature="3470:3492" ph="SELECT * FRO... projects" />
+                    <marker date="1499976215000" expanded="true" signature="4764:4793" ph="..." />
+                    <marker date="1499976215000" expanded="true" signature="4857:4896" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="834">
+                <state relative-caret-position="900">
                   <caret line="95" column="29" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
                   <folding>
                     <element signature="e#1703#2283#0" expanded="false" />
@@ -96,8 +94,8 @@
       <list>
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/styles.css" />
-        <option value="$PROJECT_DIR$/backend.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/backend.php" />
       </list>
     </option>
   </component>
@@ -245,12 +243,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499888090782</updated>
       <workItem from="1499888092250" duration="12768000" />
-      <workItem from="1499963195312" duration="9591000" />
+      <workItem from="1499963195312" duration="10509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22359000" />
+    <option name="totallyTimeSpent" value="23277000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,13 +313,12 @@
           <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding>
             <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-            <element signature="n#get_Projects#0;n#!!top" expanded="false" />
-            <marker date="1499975279000" expanded="true" signature="855:877" ph="SELECT * FRO... projects" />
-            <marker date="1499975279000" expanded="true" signature="1700:1703" ph="..." />
-            <marker date="1499975279000" expanded="true" signature="2322:2346" ph="SELECT * FRO... categories" />
-            <marker date="1499975279000" expanded="true" signature="3031:3053" ph="SELECT * FRO... projects" />
-            <marker date="1499975279000" expanded="true" signature="4325:4354" ph="..." />
-            <marker date="1499975279000" expanded="true" signature="4418:4457" ph="..." />
+            <marker date="1499976215000" expanded="true" signature="1294:1316" ph="SELECT * FRO... projects" />
+            <marker date="1499976215000" expanded="true" signature="2139:2142" ph="..." />
+            <marker date="1499976215000" expanded="true" signature="2761:2785" ph="SELECT * FRO... categories" />
+            <marker date="1499976215000" expanded="true" signature="3470:3492" ph="SELECT * FRO... projects" />
+            <marker date="1499976215000" expanded="true" signature="4764:4793" ph="..." />
+            <marker date="1499976215000" expanded="true" signature="4857:4896" ph="..." />
           </folding>
         </state>
       </provider>
@@ -343,31 +340,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="45" column="46" lean-forward="false" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="46" />
-          <folding>
-            <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-            <element signature="n#get_Projects#0;n#!!top" expanded="false" />
-            <marker date="1499975279000" expanded="true" signature="855:877" ph="SELECT * FRO... projects" />
-            <marker date="1499975279000" expanded="true" signature="1700:1703" ph="..." />
-            <marker date="1499975279000" expanded="true" signature="2322:2346" ph="SELECT * FRO... categories" />
-            <marker date="1499975279000" expanded="true" signature="3031:3053" ph="SELECT * FRO... projects" />
-            <marker date="1499975279000" expanded="true" signature="4325:4354" ph="..." />
-            <marker date="1499975279000" expanded="true" signature="4418:4457" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="834">
+        <state relative-caret-position="900">
           <caret line="95" column="29" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
           <folding>
             <element signature="e#1703#2283#0" expanded="false" />
             <element signature="e#2425#2927#0" expanded="false" />
             <element signature="e#2958#3428#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding>
+            <element signature="n#get_Categories#0;n#!!top" expanded="false" />
+            <marker date="1499976215000" expanded="true" signature="1294:1316" ph="SELECT * FRO... projects" />
+            <marker date="1499976215000" expanded="true" signature="2139:2142" ph="..." />
+            <marker date="1499976215000" expanded="true" signature="2761:2785" ph="SELECT * FRO... categories" />
+            <marker date="1499976215000" expanded="true" signature="3470:3492" ph="SELECT * FRO... projects" />
+            <marker date="1499976215000" expanded="true" signature="4764:4793" ph="..." />
+            <marker date="1499976215000" expanded="true" signature="4857:4896" ph="..." />
           </folding>
         </state>
       </provider>

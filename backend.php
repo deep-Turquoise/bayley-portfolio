@@ -17,7 +17,19 @@ function backImage($category, $id, $cur_img) {
 }
 
 function nextImage($category, $id, $cur_img) {
-
+    $dir = "projects/$category/$id";
+    $contents = scandir($dir);
+    for($x=0; $x < count($contents); ++$x) {
+        if("$dir/$contents[$x]" == $cur_img) {
+            if($x == count($contents)) {
+                $top_image_num = $contents[2];
+                print "\"$dir/$contents[$top_image_num]\"";
+            } else {
+                $num = $x + 1;
+                print "\"$dir/$contents[$num]\"";
+            }
+        }
+    }
 }
 
 function return_First_File_Name($dir) {
