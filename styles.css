@@ -123,6 +123,8 @@
     position: absolute;
     left: 10%;
     top: 40%;
+    height: 50px;
+    width: 50px;
 }
 
 .modal_right_arrow {
