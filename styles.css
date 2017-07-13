@@ -135,3 +135,8 @@
     height: 20px;
     width: 20px;
 }
+
+.modal_left_arrow img, .modal_right_arrow img {
+    height: 100%;
+    width: 100%;
+}
