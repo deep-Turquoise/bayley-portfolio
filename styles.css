@@ -100,6 +100,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    right: 0;
     background-color: rgba(0,0,0,0.75);
     visibility: hidden;
 }
@@ -114,6 +115,7 @@
 
 .modal_content img {
     position: relative;
+    margin: auto;
     width: 100%;
     height: auto;
 }
