@@ -7,10 +7,11 @@ function backImage($category, $id, $cur_img) {
         if("$dir/$contents[$x]" == $cur_img) {
             if($x == 2) {
                 $top_image_num = count($contents);
-                print "$dir/$contents[$top_image_num]";
+                print "<img src=\"$dir/$contents[$top_image_num]\">";
             } else {
                 $num = $x - 1;
-                print "$dir/$contents[$num]";
+                $image_name = $contents[$num];
+                print "<img src=\"$dir/$image_name\">";
             }
         }
     }
@@ -23,10 +24,10 @@ function nextImage($category, $id, $cur_img) {
         if("$dir/$contents[$x]" == $cur_img) {
             if($x == count($contents)) {
                 $top_image_num = $contents[2];
-                print "\"$dir/$contents[$top_image_num]\"";
+                print "<img src=\"$dir/$contents[$top_image_num]\">";
             } else {
                 $num = $x + 1;
-                print "\"$dir/$contents[$num]\"";
+                print "<img src=\"$dir/$contents[$num]\">";
             }
         }
     }
@@ -56,8 +57,9 @@ function openModal($category, $id) {
                 print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$first_Image_Dir');\"><img src=\"right.png\"></div>"; // right arrow
 
                 print "<div id=\"modal_content\" class=\"modal_content\">";
-
+                print "<div id=\"modal_image_zone\">";
                 print "<img id=\"cur_modal_image\" src=\"$first_Image_Dir\">";
+                print "</div>";
 
                 print "<div class=\"modal_image_overlay\">";
                 print "<h1>" . $row['project_name'] . "</h1>";
