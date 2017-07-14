@@ -1,14 +1,9 @@
 <?php
 
 function backImage($category, $id, $cur_img) {
-    print "<h1 style=\"color:white;\">Here is the ID: $id</h1>";
     $dir = "projects/$category/$id";
     $contents = scandir($dir);
     for($x = 0; $x < count($contents); ++$x) {
-        print "This is category: $category <br>";
-        print "This is id: $id <br>";
-        print "This is contents: $contents[4] <br>";
-        print "This is image: $cur_img <br>";
         if("$dir/$contents[$x]" == $cur_img) {
             if($x == 2) {
                 $top_image_num = count($contents);
@@ -23,7 +18,6 @@ function backImage($category, $id, $cur_img) {
 }
 
 function nextImage($category, $id, $cur_img) {
-    print "<h1 style=\"color:white;\">Here is the ID: $id</h1>";
     $dir = "projects/$category/$id";
     $contents = scandir($dir);
     for($x=0; $x < count($contents); ++$x) {
