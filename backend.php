@@ -1,27 +1,50 @@
 <?php
 
+function get_back_image_name($category, $id, $cur_img) {
+    $dir = "projects/$category/$id";
+    $contents = scandir($dir);
+    for($x = 0; $x < count($contents); ++$x) {
+        if("$dir/$contents[$x]" == $cur_img) {
+            if($x == 2) {
+                $num = count($contents) - 1;
+                print "$dir/$contents[$num]";
+            }
+            else {
+                $num = $x - 1;
+                print "dir/$contents[$num]";
+            }
+        }
+    }
+}
+
+function get_next_image_name($category, $id, $cur_img) {
+    $dir = "projects/$category/$id";
+    $contents = scandir($dir);
+    for($x = 0; $x < count($contents); ++$x) {
+        if("$dir/$contents[$x]" == $cur_img) {
+            if($x == (count($contents)-1)) {
+                print "$dir/$contents[2]";
+            }
+            else {
+                $num = $x + 1;
+                print "dir/$contents[$num]";
+            }
+        }
+    }
+}
+
 function backImage($category, $id, $cur_img) {
     $dir = "projects/$category/$id";
     $contents = scandir($dir);
     for($x = 0; $x < count($contents); ++$x) {
-        //print "<h1 style=\"color:white\">Here is contents: $dir/$contents[$x]</h1>";
-        //print "<h1 style=\"color:white\">Here is cur_image: $cur_img</h1>";
         if("$dir/$contents[$x]" == $cur_img) {
-            if($x == 2) {
-                $top_image_num = count($contents) - 1;
-                $another_level_lower = $top_image_num - 1;
-                print "<img src=\"$dir/$contents[$top_image_num]\">";
-                print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$dir/$contents[$another_level_lower]');\"><img src=\"left.png\"></div>";
-                print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$dir/$cur_img');\"><img src=\"right.png\"></div>";
+            if($x == 2 || $x < 2) {
+                $num = count($contents) - 1;
+                print "<img src=\"$dir/$contents[$num]\">";
             }
             else {
                 $num = $x - 1;
-                $another_level_lower = $num - 1;
-                if($another_level_lower == 1) { $another_level_lower == count($contents) - 1; }
-
                 $image_name = $contents[$num];
-                print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$dir/$contents[$another_level_lower]');\"><img src=\"left.png\"></div>";
-                print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$cur_img');\"><img src=\"right.png\"></div>";
                 print "<img src=\"$dir/$image_name\">";
 
             }
@@ -34,9 +57,9 @@ function nextImage($category, $id, $cur_img) {
     $contents = scandir($dir);
     for($x=0; $x < count($contents); ++$x) {
         if("$dir/$contents[$x]" == $cur_img) {
-            if($x == count($contents)) {
-                $top_image_num = $contents[2];
-                print "<img src=\"$dir/$contents[$top_image_num]\">";
+            if($x == (count($contents)-1) || $x > (count($contents)-1)) {
+                $num = $contents[2];
+                print "<img src=\"$dir/$contents[$num]\">";
             } else {
                 $num = $x + 1;
                 print "<img src=\"$dir/$contents[$num]\">";
@@ -65,8 +88,8 @@ function openModal($category, $id) {
                 $dir = "projects/" .  $category . "/" . $id; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
 
-                print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$first_Image_Dir');\"><img src=\"left.png\"></div>";
-                print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$first_Image_Dir');\"><img src=\"right.png\"></div>";
+                print "<div id=\"modal_left_arrow\" class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$first_Image_Dir');\"><img src=\"left.png\"></div>";
+                print "<div id=\"modal_right_arrow\" class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$first_Image_Dir');\"><img src=\"right.png\"></div>";
 
                 print "<div id=\"modal_content\" class=\"modal_content\">";
                 print "<div id=\"modal_image_zone\">";
@@ -163,3 +186,5 @@ if($instructions == "allocate_Projects") { get_Projects($category); }
 if($instructions == "openModal") { openModal($category, $id); }
 if($instructions == "backImage") { backImage($category, $id, $cur_img); }
 if($instructions == "nextImage") { nextImage($category, $id, $cur_img); }
+if($instructions == "next_image_name") { get_next_image_name($category, $id, $cur_img); }
+if($instructions == "back_image_name") { get_back_image_name($category, $id, $cur_img); }

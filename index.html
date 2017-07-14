@@ -12,7 +12,39 @@
     <div id="modal" class="modal" onclick="closeModal()"></div>
 </body>
 <script>
+
+    function get_back_image_name(cur_Category, cur_id, cur_image) {
+        if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); }
+        else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
+
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                return this.responseText;
+            }
+        }
+        xmlhttp.open("GET", "backend.php?instructions=back_image_name&category_name=" + cur_Category + "&id=" + cur_id + "&img=" + cur_image, true);
+        xmlhttp.send();
+    }
+
+
+    function get_next_image_name(cur_Category, cur_id, cur_image) {
+        if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); }
+        else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
+
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                return this.responseText;
+            }
+        }
+        xmlhttp.open("GET", "backend.php?instructions=back_image_name&category_name=" + cur_Category + "&id=" + cur_id + "&img=" + cur_image, true);
+        xmlhttp.send();
+    }
+
+
     function back_image(cur_Category, cur_id, cur_image) {
+        document.getElementById("modal_left_arrow").onclick = back_image(cur_Category,cur_id, get_back_image_name(cur_Category, cur_id, cur_image));
+        document.getElementById("modal_right_arrow").onclick = next_image(cur_Category, cur_id, cur_image);
+
         if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); }
         else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
 
@@ -26,6 +58,9 @@
     }
 
     function next_image(cur_Category, cur_id, cur_image) {
+        document.getElementById("modal_left_arrow").onclick = back_image(cur_Category,cur_id, cur_image);
+        document.getElementById("modal_right_arrow").onclick = next_image(cur_Category, cur_id, get_next_image_name(cur_Category, cur_id, cur_image));
+
         if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); }
         else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
 
