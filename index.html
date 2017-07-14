@@ -21,7 +21,7 @@
                 document.getElementById("modal_image_zone").innerHTML = this.responseText;
             }
         }
-        xmlhttp.open("GET", "backend.php?instructions=backImage&category_name=" + cur_Category + "&id=" + cur_id + "$img=" + cur_image, true);
+        xmlhttp.open("GET", "backend.php?instructions=backImage&category_name=" + cur_Category + "&id=" + cur_id + "&img=" + cur_image, true);
         xmlhttp.send();
     }
 
@@ -34,7 +34,7 @@
                 document.getElementById("modal_image_zone").innerHTML = this.responseText;
             }
         }
-        xmlhttp.open("GET", "backend.php?instructions=nextImage&category_name=" + cur_Category + "&id=" + cur_id + "$img=" + cur_image, true);
+        xmlhttp.open("GET", "backend.php?instructions=nextImage&category_name=" + cur_Category + "&id=" + cur_id + "&img=" + cur_image, true);
         xmlhttp.send();
     }
 
