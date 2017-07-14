@@ -4,8 +4,8 @@ function backImage($category, $id, $cur_img) {
     $dir = "projects/$category/$id";
     $contents = scandir($dir);
     for($x = 0; $x < count($contents); ++$x) {
-        print "<h1 style=\"color:white\">Here is contents: $dir/$contents[$x]</h1>";
-        print "<h1 style=\"color:white\">Here is cur_image: $cur_img</h1>";
+        //print "<h1 style=\"color:white\">Here is contents: $dir/$contents[$x]</h1>";
+        //print "<h1 style=\"color:white\">Here is cur_image: $cur_img</h1>";
         if("$dir/$contents[$x]" == $cur_img) {
             if($x == 2) {
                 $top_image_num = count($contents) - 1;
