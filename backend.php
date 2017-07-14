@@ -8,7 +8,7 @@ function backImage($category, $id, $cur_img) {
         print "<h1 style=\"color:white\">Here is cur_image: $cur_img</h1>";
         if("$dir/$contents[$x]" == $cur_img) {
             if($x == 2) {
-                $top_image_num = count($contents);
+                $top_image_num = count($contents) - 1;
                 print "<img src=\"$dir/$contents[$top_image_num]\">";
             } else {
                 $num = $x - 1;
