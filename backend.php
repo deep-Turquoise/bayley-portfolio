@@ -1,38 +1,5 @@
 <?php
 
-function get_back_image_name($category, $id, $cur_img) {
-    $dir = "projects/$category/$id";
-    $contents = scandir($dir);
-    for($x = 0; $x < count($contents); ++$x) {
-        if("$dir/$contents[$x]" == $cur_img) {
-            if($x == 2) {
-                $num = count($contents) - 1;
-                print "$dir/$contents[$num]";
-            }
-            else {
-                $num = $x - 1;
-                print "dir/$contents[$num]";
-            }
-        }
-    }
-}
-
-function get_next_image_name($category, $id, $cur_img) {
-    $dir = "projects/$category/$id";
-    $contents = scandir($dir);
-    for($x = 0; $x < count($contents); ++$x) {
-        if("$dir/$contents[$x]" == $cur_img) {
-            if($x == (count($contents)-1)) {
-                print "$dir/$contents[2]";
-            }
-            else {
-                $num = $x + 1;
-                print "dir/$contents[$num]";
-            }
-        }
-    }
-}
-
 function backImage($category, $id, $cur_img) {
     $dir = "projects/$category/$id";
     $contents = scandir($dir);
@@ -186,5 +153,3 @@ if($instructions == "allocate_Projects") { get_Projects($category); }
 if($instructions == "openModal") { openModal($category, $id); }
 if($instructions == "backImage") { backImage($category, $id, $cur_img); }
 if($instructions == "nextImage") { nextImage($category, $id, $cur_img); }
-if($instructions == "next_image_name") { get_next_image_name($category, $id, $cur_img); }
-if($instructions == "back_image_name") { get_back_image_name($category, $id, $cur_img); }
