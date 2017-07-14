@@ -10,9 +10,12 @@ function backImage($category, $id, $cur_img) {
             if($x == 2) {
                 $top_image_num = count($contents) - 1;
                 print "<img src=\"$dir/$contents[$top_image_num]\">";
-            } else {
+            }
+            else {
                 $num = $x - 1;
                 $image_name = $contents[$num];
+                print "<h1 style=\"color:white\">Here is the name: $dir/$image_name</h1>";
+                print "<h1 style=\"color:white\">Here is the cur_image: $dir/$cur_img</h1>";
                 print "<img src=\"$dir/$image_name\">";
             }
         }
