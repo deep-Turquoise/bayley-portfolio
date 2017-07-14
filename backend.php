@@ -1,6 +1,7 @@
 <?php
 
 function backImage($category, $id, $cur_img) {
+    print "<h1 style=\"color:white;\">Here is the ID: $id</h1>";
     $dir = "projects/$category/$id";
     $contents = scandir($dir);
     for($x = 0; $x < count($contents); ++$x) {
@@ -22,6 +23,7 @@ function backImage($category, $id, $cur_img) {
 }
 
 function nextImage($category, $id, $cur_img) {
+    print "<h1 style=\"color:white;\">Here is the ID: $id</h1>";
     $dir = "projects/$category/$id";
     $contents = scandir($dir);
     for($x=0; $x < count($contents); ++$x) {
@@ -148,6 +150,7 @@ $instructions = $_GET['instructions'];
 $category = $_GET['category_name'];
 $id = $_GET['id'];
 $cur_img = $_GET['img'];
+
 
 if($instructions == "categories") { get_Categories(); }
 if($instructions == "allocate_Projects") { get_Projects($category); }
