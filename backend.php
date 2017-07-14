@@ -9,14 +9,19 @@ function backImage($category, $id, $cur_img) {
         if("$dir/$contents[$x]" == $cur_img) {
             if($x == 2) {
                 $top_image_num = count($contents) - 1;
+                $another_level_lower = $top_image_num - 1;
                 print "<img src=\"$dir/$contents[$top_image_num]\">";
+                print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$dir/$contents[$another_level_lower]');\"><img src=\"left.png\"></div>";
+                print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$dir/$cur_img');\"><img src=\"right.png\"></div>";
             }
             else {
                 $num = $x - 1;
+                $another_level_lower = $num - 1;
                 $image_name = $contents[$num];
-                print "<h1 style=\"color:white\">Here is the name: $dir/$image_name</h1>";
-                print "<h1 style=\"color:white\">Here is the cur_image: $dir/$cur_img</h1>";
+                print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$dir/$contents[$another_level_lower]');\"><img src=\"left.png\"></div>";
+                print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$cur_img');\"><img src=\"right.png\"></div>";
                 print "<img src=\"$dir/$image_name\">";
+
             }
         }
     }
@@ -58,8 +63,8 @@ function openModal($category, $id) {
                 $dir = "projects/" .  $category . "/" . $id; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
 
-                print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$first_Image_Dir');\"><img src=\"left.png\"></div>"; // left/next image arrow
-                print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$first_Image_Dir');\"><img src=\"right.png\"></div>"; // right arrow
+                print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$first_Image_Dir');\"><img src=\"left.png\"></div>";
+                print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$first_Image_Dir');\"><img src=\"right.png\"></div>";
 
                 print "<div id=\"modal_content\" class=\"modal_content\">";
                 print "<div id=\"modal_image_zone\">";
