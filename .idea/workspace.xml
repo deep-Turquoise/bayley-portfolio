@@ -31,18 +31,18 @@
           <file leaf-file-name="backend.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+                <state relative-caret-position="254">
+                  <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
                   <folding>
                     <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-                    <marker date="1500057538000" expanded="true" signature="196:207" ph="..." />
-                    <marker date="1500057538000" expanded="true" signature="276:287" ph="..." />
-                    <marker date="1500057538000" expanded="true" signature="1543:1565" ph="SELECT * FRO... projects" />
-                    <marker date="1500057538000" expanded="true" signature="2388:2391" ph="..." />
-                    <marker date="1500057538000" expanded="true" signature="3096:3120" ph="SELECT * FRO... categories" />
-                    <marker date="1500057538000" expanded="true" signature="3805:3827" ph="SELECT * FRO... projects" />
-                    <marker date="1500057538000" expanded="true" signature="5099:5128" ph="..." />
-                    <marker date="1500057538000" expanded="true" signature="5192:5231" ph="..." />
+                    <marker date="1500057589000" expanded="true" signature="196:207" ph="..." />
+                    <marker date="1500057589000" expanded="true" signature="281:292" ph="..." />
+                    <marker date="1500057589000" expanded="true" signature="1548:1570" ph="SELECT * FRO... projects" />
+                    <marker date="1500057589000" expanded="true" signature="2393:2396" ph="..." />
+                    <marker date="1500057589000" expanded="true" signature="3101:3125" ph="SELECT * FRO... categories" />
+                    <marker date="1500057589000" expanded="true" signature="3810:3832" ph="SELECT * FRO... projects" />
+                    <marker date="1500057589000" expanded="true" signature="5104:5133" ph="..." />
+                    <marker date="1500057589000" expanded="true" signature="5197:5236" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -244,12 +244,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499888090782</updated>
       <workItem from="1499888092250" duration="12768000" />
-      <workItem from="1499963195312" duration="14049000" />
+      <workItem from="1499963195312" duration="14095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26817000" />
+    <option name="totallyTimeSpent" value="26863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,14 +313,14 @@
           <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding>
             <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-            <marker date="1500057538000" expanded="true" signature="196:207" ph="..." />
-            <marker date="1500057538000" expanded="true" signature="276:287" ph="..." />
-            <marker date="1500057538000" expanded="true" signature="1543:1565" ph="SELECT * FRO... projects" />
-            <marker date="1500057538000" expanded="true" signature="2388:2391" ph="..." />
-            <marker date="1500057538000" expanded="true" signature="3096:3120" ph="SELECT * FRO... categories" />
-            <marker date="1500057538000" expanded="true" signature="3805:3827" ph="SELECT * FRO... projects" />
-            <marker date="1500057538000" expanded="true" signature="5099:5128" ph="..." />
-            <marker date="1500057538000" expanded="true" signature="5192:5231" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="196:207" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="281:292" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="1548:1570" ph="SELECT * FRO... projects" />
+            <marker date="1500057589000" expanded="true" signature="2393:2396" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="3101:3125" ph="SELECT * FRO... categories" />
+            <marker date="1500057589000" expanded="true" signature="3810:3832" ph="SELECT * FRO... projects" />
+            <marker date="1500057589000" expanded="true" signature="5104:5133" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="5197:5236" ph="..." />
           </folding>
         </state>
       </provider>
@@ -355,18 +355,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="254">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="n#get_Categories#0;n#!!top" expanded="false" />
-            <marker date="1500057538000" expanded="true" signature="196:207" ph="..." />
-            <marker date="1500057538000" expanded="true" signature="276:287" ph="..." />
-            <marker date="1500057538000" expanded="true" signature="1543:1565" ph="SELECT * FRO... projects" />
-            <marker date="1500057538000" expanded="true" signature="2388:2391" ph="..." />
-            <marker date="1500057538000" expanded="true" signature="3096:3120" ph="SELECT * FRO... categories" />
-            <marker date="1500057538000" expanded="true" signature="3805:3827" ph="SELECT * FRO... projects" />
-            <marker date="1500057538000" expanded="true" signature="5099:5128" ph="..." />
-            <marker date="1500057538000" expanded="true" signature="5192:5231" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="196:207" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="281:292" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="1548:1570" ph="SELECT * FRO... projects" />
+            <marker date="1500057589000" expanded="true" signature="2393:2396" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="3101:3125" ph="SELECT * FRO... categories" />
+            <marker date="1500057589000" expanded="true" signature="3810:3832" ph="SELECT * FRO... projects" />
+            <marker date="1500057589000" expanded="true" signature="5104:5133" ph="..." />
+            <marker date="1500057589000" expanded="true" signature="5197:5236" ph="..." />
           </folding>
         </state>
       </provider>
