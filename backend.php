@@ -3,10 +3,10 @@
 function backImage($category, $id, $cur_img) {
     $dir = "projects/$category/$id";
     $contents = scandir($dir);
-    for($x=0; $x < count($contents); ++$x) {
+    for($x = 0; $x < count($contents); ++$x) {
         print "This is category: $category <br>";
-        print "This is $id <br>";
-        print "This is contents: $contents[$x] <br>";
+        print "This is id: $id <br>";
+        print "This is contents: $contents[4] <br>";
         print "This is image: $cur_img <br>";
         if("$dir/$contents[$x]" == $cur_img) {
             if($x == 2) {
