@@ -17,6 +17,8 @@ function backImage($category, $id, $cur_img) {
             else {
                 $num = $x - 1;
                 $another_level_lower = $num - 1;
+                if($another_level_lower == 1) { $another_level_lower == count($contents) - 1; }
+
                 $image_name = $contents[$num];
                 print "<div class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$dir/$contents[$another_level_lower]');\"><img src=\"left.png\"></div>";
                 print "<div class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$cur_img');\"><img src=\"right.png\"></div>";
