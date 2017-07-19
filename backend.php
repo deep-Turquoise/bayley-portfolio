@@ -4,12 +4,16 @@ function changeImage($instructions, $image_URL) {
 
     $chunkA = substr($image_URL, 53, strlen($image_URL));
     $cur_Category = substr($chunkA, 0, strpos($chunkA, "/"));
-    $chunkB = substr($chunkA, strpos($chunkA, "/"), strlen($chunkA));
+    $chunkB = substr($chunkA, strpos($chunkA, "/")+1, strlen($chunkA));
+    $cur_Id = substr($chunkB, 0, strpos($chunkA, "/"));
+    $cur_Image_Name = substr(strrchr($chunkB, "/"), 1);
 
     print "<h1 style='color:white;'>URL: $image_URL</h1>";
     print "<h1 style='color:white;'>CA: $chunkA</h1>";
     print "<h1 style='color:white;'>CAT: $cur_Category</h1>";
     print "<h1 style='color:white;'>CB: $chunkB</h1>";
+    print "<h1 style='color:white;'>id: $cur_Id</h1>";
+    print "<h1 style='color:white;'>img: $cur_Image_Name</h1>";
 
 
 //    $return_Image_URL = "";
