@@ -11,7 +11,7 @@ function changeImage($instructions, $image_URL) {
     $arr_dir = scandir("projects/$cur_Category/$cur_Id/");
 
     for($x = 0; $x < count($arr_dir); ++$x) {
-        if($arr_dir[$x] == $cur_Image_Name && count($arr_dir) < 3) {
+        if($arr_dir[$x] == $cur_Image_Name && count($arr_dir) > 3) {
             if($instructions == "nextImage") {
                 $next_Num = $x + 1;
                 if($next_Num < count($arr_dir)) {
