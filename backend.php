@@ -18,7 +18,8 @@ function changeImage($instructions, $image_URL) {
     $scan_arr = scandir("projects/$cur_Category/$cur_Id/");
 
     for($x = 0; $x < count($scan_arr); ++$x) {
-        $arr_dir[$x] = $scan_arr[$x+2];
+        $num = $x+2;
+        $arr_dir[$x] = $scan_arr[$num];
     }
 
     // is there more than one image in that folder?
