@@ -15,9 +15,12 @@ function changeImage($instructions, $image_URL) {
     $cur_Id = substr($chunkB, 0, strpos($chunkB, "/"));
     $cur_Image_Name = substr(strrchr($chunkA, "/"), 1);
 
-    $arr_dir = scandir("projects/$cur_Category/$cur_Id/");
-    unset($arr_dir[0]);
-    unset($arr_dir[1]);
+    $scan_arr = scandir("projects/$cur_Category/$cur_Id/");
+
+    for($x = 0; $x < count($scan_arr); ++$x) {
+        $arr_dir[$x] = $scan_arr[$x+2];
+    }
+
     // is there more than one image in that folder?
     if(count($arr_dir) > 1) {
         // determine where the current image is in the directory
