@@ -1,7 +1,7 @@
 <?php
 
 function changeImage($instructions, $image_URL) {
-
+    print "<div style='color:white'>";
     $chunkA = substr($image_URL, 53, strlen($image_URL));
     $cur_Category = substr($chunkA, 0, strpos($chunkA, "/"));
     $chunkB = substr($chunkA, strpos($chunkA, "/")+1, strlen($chunkA));
@@ -50,6 +50,7 @@ function changeImage($instructions, $image_URL) {
     else {
         print "projects/$cur_Category/$cur_Id/" . $arr_dir[0];
     }
+    print"</div>";
 }
 
 function return_First_File_Name($dir) {
