@@ -7,7 +7,7 @@ function changeImage($instructions, $image_URL) {
     $cur_Category = substr($chunkA, 0, strpos($chunkA, "/"));
     $chunkB = substr($chunkA, strpos($chunkA, "/")+1, strlen($chunkA));
     $cur_Id = substr($chunkB, 0, strpos($chunkB, "/"));
-    $cur_Image_Name = substr(strrchr($chunkB, "/"), 1);
+    $cur_Image_Name = substr(strrchr($chunkA, "/"), 1);
 
     $arr_dir = scandir("projects/$cur_Category/$cur_Id/");
     unset($arr_dir[0]);
