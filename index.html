@@ -18,8 +18,8 @@
 
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
-                //document.getElementById("cur_modal_image").src = this.responseText;
-                document.getElementById("modal_content").innerHTML = this.responseText;
+                document.getElementById("cur_modal_image").src = this.responseText;
+                //document.getElementById("modal_content").innerHTML = this.responseText;
             }
         }
         xmlhttp.open("GET", "backend.php?instructions=" + instructions + "&image_URL=" + image_URL, true);
