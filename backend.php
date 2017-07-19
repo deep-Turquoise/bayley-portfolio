@@ -16,7 +16,7 @@ function changeImage($instructions, $image_URL) {
         if($arr_dir[$x] == $cur_Image_Name) {
             if($instructions == "nextImage") {
                 $next_Num = $x + 1;
-                if($next_Num < (count($arr_dir)-1) {
+                if($next_Num < (count($arr_dir)-1)) {
                     $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[$next_Num];
                     print $new_image;
                 }
@@ -37,23 +37,6 @@ function changeImage($instructions, $image_URL) {
             }
         }
     }
-
-//    $conn = new mysqli("localhost", "root", "airpolo3", "intranet_Bayley");
-//    if ($conn->connect_error) { print "Database Connection Error"; }
-//
-//    $sql = "SELECT * FROM categories";
-//    $result = $conn->query($sql);
-//
-//    if ($result->num_rows > 0) {
-//        while($row = $result->fetch_assoc()) {
-//            $name = $row['name'];
-//            if($name != "Featured") {
-//                print "<a onclick=\"getProjects('$name')\"><div class=\"category_Block\">$name</div></a>";
-//            }
-//        }
-//    }
-//    $conn->close();
-
 }
 
 function return_First_File_Name($dir) {
