@@ -36,7 +36,7 @@ function changeImage($instructions, $image_URL) {
                     }
                 }
                 // we are going back an image
-                else {
+                if($instructions == "backImage") {
                     // are we looking at the first image? if so, go to the last image in the directory.
                     if($loc == 0) {
                         $last_loc = count($arr_dir) - 1;
