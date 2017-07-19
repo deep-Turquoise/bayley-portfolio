@@ -20,24 +20,24 @@ function changeImage($instructions, $image_URL) {
                     if($next_Num < count($arr_dir)) {
                         $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[$next_Num];
                         print $new_image;
-                        return;
+                        break;
                     }
                     else {
                         $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[0];
                         print $new_image;
-                        return;
+                        break;
                     }
                 }
                 else {
                     if($x > 0) {
                         $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[$x-1];
                         print $new_image;
-                        return;
+                        break;
                     }
                     else {
                         $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[0];
                         print $new_image;
-                        return;
+                        break;
                     }
                 }
             }
