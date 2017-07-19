@@ -8,17 +8,31 @@ function changeImage($instructions, $image_URL) {
     $cur_Id = substr($chunkB, 0, strpos($chunkB, "/"));
     $cur_Image_Name = substr(strrchr($chunkB, "/"), 1);
 
-    $return_Image_URL = "";
-
     $arr_dir = scandir("projects/$cur_Category/$cur_Id/");
-    print"<h1 style='color:white;'>Here is 0: $arr_dir[0]</h1>";
-    print"<h1 style='color:white;'>Here is 1: $arr_dir[1]</h1>";
     unset($arr_dir[0]); // removing "."
     unset($arr_dir[1]); // removing ".."
-    for($x = 0; $x < count($arr_dir); ++$x) {
-        print"<h1 style='color:white;'>$arr_dir[$x]</h1>";
-    }
 
+    for($x = 0; $x < count($arr_dir); ++$x) {
+        if($arr_dir[$x] == $cur_Image_Name) {
+            if($instructions == "nextImage") {
+                $next_Num = $x + 1;
+                if($next_Num < count($arr_dir)) {
+                    return $arr_dir[$next_Num];
+                }
+                else {
+                    return $arr_dir[0];
+                }
+            }
+            else {
+                if($x == 0 && count($arr_dir) != 1) {
+                    return $arr_dir[$x+1];
+                }
+                else {
+                    return $arr_dir[0];
+                }
+            }
+        }
+    }
 
 //    $conn = new mysqli("localhost", "root", "airpolo3", "intranet_Bayley");
 //    if ($conn->connect_error) { print "Database Connection Error"; }
@@ -36,7 +50,6 @@ function changeImage($instructions, $image_URL) {
 //    }
 //    $conn->close();
 
-    return $return_Image_URL;
 }
 
 function return_First_File_Name($dir) {
