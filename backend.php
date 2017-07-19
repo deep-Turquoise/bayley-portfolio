@@ -40,11 +40,13 @@ function changeImage($instructions, $image_URL) {
                     // are we looking at the first image? if so, go to the last image in the directory.
                     if($loc == 0) {
                         $last_loc = count($arr_dir) - 1;
+                        print "here1";
                         print "projects/$cur_Category/$cur_Id/" . $arr_dir[$last_loc];
                     }
                     // if not, lets just go back an image
                     else {
                         $loc_minus = $loc - 1;
+                        print "here2";
                         print "projects/$cur_Category/$cur_Id/" . $arr_dir[$loc_minus];
                     }
                 }
