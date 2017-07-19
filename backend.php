@@ -1,38 +1,33 @@
 <?php
 
-function backImage($category, $id, $cur_img) {
-    $dir = "projects/$category/$id";
-    $contents = scandir($dir);
-    for($x = 0; $x < count($contents); ++$x) {
-        if("$dir/$contents[$x]" == $cur_img) {
-            if($x == 2 || $x < 2) {
-                $num = count($contents) - 1;
-                print "<img src=\"$dir/$contents[$num]\">";
-            }
-            else {
-                $num = $x - 1;
-                $image_name = $contents[$num];
-                print "<img src=\"$dir/$image_name\">";
+function changeImage($instructions, $image_URL) {
 
-            }
-        }
-    }
-}
+    $chunkA = substr($image_URL, 10, count($image_URL));
+    print "<h1 style='color:white;'>$chunkA</h1>";
 
-function nextImage($category, $id, $cur_img) {
-    $dir = "projects/$category/$id";
-    $contents = scandir($dir);
-    for($x=0; $x < count($contents); ++$x) {
-        if("$dir/$contents[$x]" == $cur_img) {
-            if($x == (count($contents)-1) || $x > (count($contents)-1)) {
-                $num = $contents[2];
-                print "<img src=\"$dir/$contents[$num]\">";
-            } else {
-                $num = $x + 1;
-                print "<img src=\"$dir/$contents[$num]\">";
-            }
-        }
-    }
+
+//    $return_Image_URL = "";
+//
+//    $conn = new mysqli("localhost", "root", "airpolo3", "intranet_Bayley");
+//    if ($conn->connect_error) { print "Database Connection Error"; }
+//
+//    $sql = "SELECT * FROM categories";
+//    $result = $conn->query($sql);
+//
+//    //Just so we can make featured first
+//    print "<a onclick=\"getProjects('Featured')\"><div class=\"category_Block\">Featured</div></a>";
+//
+//    if ($result->num_rows > 0) {
+//        while($row = $result->fetch_assoc()) {
+//            $name = $row['name'];
+//            if($name != "Featured") {
+//                print "<a onclick=\"getProjects('$name')\"><div class=\"category_Block\">$name</div></a>";
+//            }
+//        }
+//    }
+//    $conn->close();
+//
+//    return $return_Image_URL;
 }
 
 function return_First_File_Name($dir) {
@@ -55,8 +50,8 @@ function openModal($category, $id) {
                 $dir = "projects/" .  $category . "/" . $id; // current directory
                 $first_Image_Dir = $dir . "/" . return_First_File_Name($dir);
 
-                print "<div id=\"modal_left_arrow\" class=\"modal_left_arrow\" onclick=\"back_image('$category','$id','$first_Image_Dir');\"><img src=\"left.png\"></div>";
-                print "<div id=\"modal_right_arrow\" class=\"modal_right_arrow\" onclick=\"next_image('$category', '$id', '$first_Image_Dir');\"><img src=\"right.png\"></div>";
+                print "<div id=\"modal_left_arrow\" class=\"modal_left_arrow\" onclick=\"changeImage('backImage');\"><img src=\"left.png\"></div>";
+                print "<div id=\"modal_right_arrow\" class=\"modal_right_arrow\" onclick=\"changeImage('nextImage');\"><img src=\"right.png\"></div>";
 
                 print "<div id=\"modal_content\" class=\"modal_content\">";
                 print "<div id=\"modal_image_zone\">";
@@ -145,11 +140,11 @@ function get_Projects($category) {
 $instructions = $_GET['instructions'];
 $category = $_GET['category_name'];
 $id = $_GET['id'];
-$cur_img = $_GET['img'];
+//$cur_img = $_GET['img'];
+$image_URL = $_GET['image_URL'];
 
 
 if($instructions == "categories") { get_Categories(); }
 if($instructions == "allocate_Projects") { get_Projects($category); }
 if($instructions == "openModal") { openModal($category, $id); }
-if($instructions == "backImage") { backImage($category, $id, $cur_img); }
-if($instructions == "nextImage") { nextImage($category, $id, $cur_img); }
+if($instructions == "backImage" || $instructions == "nextImage") { changeImage($instructions, $image_URL); }
