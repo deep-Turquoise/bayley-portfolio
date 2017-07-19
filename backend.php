@@ -17,18 +17,18 @@ function changeImage($instructions, $image_URL) {
             if($instructions == "nextImage") {
                 $next_Num = $x + 1;
                 if($next_Num < count($arr_dir)) {
-                    return $arr_dir[$next_Num];
+                    print $arr_dir[$next_Num];
                 }
                 else {
-                    return $arr_dir[0];
+                    print $arr_dir[0];
                 }
             }
             else {
                 if($x == 0 && count($arr_dir) != 1) {
-                    return $arr_dir[$x+1];
+                    print $arr_dir[$x+1];
                 }
                 else {
-                    return $arr_dir[0];
+                    print $arr_dir[0];
                 }
             }
         }
