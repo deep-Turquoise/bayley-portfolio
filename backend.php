@@ -48,6 +48,7 @@ function changeImage($instructions, $image_URL) {
                         print "here1<br>";
                         print "$last_loc<br>";
                         print "name: " . $arr_dir[$last_loc] . "<br>";
+                        print "<br>";
 
                         print "projects/$cur_Category/$cur_Id/" . $arr_dir[$last_loc];
                     }
