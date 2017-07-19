@@ -2,6 +2,7 @@
 
 function changeImage($instructions, $image_URL) {
     print "<div style='color:white'>";
+    print "<p>$image_URL</p>";
     $chunkA = substr($image_URL, 53, strlen($image_URL));
     $cur_Category = substr($chunkA, 0, strpos($chunkA, "/"));
     $chunkB = substr($chunkA, strpos($chunkA, "/")+1, strlen($chunkA));
