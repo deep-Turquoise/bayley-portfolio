@@ -9,10 +9,47 @@ function changeImage($instructions, $image_URL) {
     $cur_Image_Name = substr(strrchr($chunkB, "/"), 1);
 
     $arr_dir = scandir("projects/$cur_Category/$cur_Id/");
-    print "<h1 style='color:white'>b.Num:". count($arr_dir) . "</h1>";
     unset($arr_dir[0]);
     unset($arr_dir[1]);
-    print "<h1 style='color:white'>Num:". count($arr_dir) . "</h1>";
+    // is there more than one image in that folder?
+    if(count($arr_dir) > 1) {
+        // determine where the current image is in the directory
+        for($loc = 0; $loc < count($arr_dir); ++$loc) {
+            if($arr_dir[$loc] == $cur_Image_Name) {
+                // we are going to the next image
+                if($instructions == "nextImage") {
+                    // is the next image the last image in the folder?
+                    $nextNum = $loc + 1;
+                    if($nextNum != count($arr_dir)) {
+                        print "projects/$cur_Category/$cur_Id/" . $arr_dir[$nextNum];
+                    }
+                    // if it is the last image, lets go back to the start
+                    if($nextNum == count($arr_dir)) {
+                        print "projects/$cur_Category/$cur_Id/" . $arr_dir[0];
+                    }
+                }
+                // we are going back an image
+                else {
+                    // are we looking at the first image? if so, go to the last image in the directory.
+                    if($loc == 0) {
+                        $last_loc = count($arr_dir) - 1;
+                        print "projects/$cur_Category/$cur_Id/" . $arr_dir[$last_loc];
+                    }
+                    // if not, lets just go back an image
+                    else {
+                        $loc_minus = $loc - 1;
+                        print "projects/$cur_Category/$cur_Id/" . $arr_dir[$loc_minus];
+                    }
+                }
+                //end the loop
+                break;
+            }
+        }
+    }
+    // if there is only one image in folder, output that image.
+    else {
+        print "projects/$cur_Category/$cur_Id/" . $arr_dir[0];
+    }
 }
 
 function return_First_File_Name($dir) {
@@ -46,7 +83,6 @@ function openModal($category, $id) {
                 print "<div class=\"modal_image_overlay\">";
                 print "<h1>" . $row['project_name'] . "</h1>";
                 print "<p>" . $row['project_location'] . "</p>";
-
 
                 print "</div>"; // END overlay
                 print "</a></div>"; // END block
