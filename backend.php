@@ -4,7 +4,7 @@ function changeImage($instructions, $image_URL) {
 
     $chunkA = substr($image_URL, 53, strlen($image_URL));
     $cur_Category = substr($chunkA, 0, strpos($chunkA, "/"));
-    $chunkB = substr($chunkA, strstr($chunkA, '/'), strlen($chunkA));
+    $chunkB = substr($chunkA, strpos($chunkA, "/"), strlen($chunkA));
 
     print "<h1 style='color:white;'>URL: $image_URL</h1>";
     print "<h1 style='color:white;'>CA: $chunkA</h1>";
