@@ -11,6 +11,8 @@ function changeImage($instructions, $image_URL) {
     $return_Image_URL = "";
 
     $arr_dir = scandir("projects/$cur_Category/$cur_Id/");
+    print"<h1 style='color:white;'>Here is 0: $arr_dir[0]</h1>";
+    print"<h1 style='color:white;'>Here is 1: $arr_dir[1]</h1>";
     unset($arr_dir[0]); // removing "."
     unset($arr_dir[1]); // removing ".."
     for($x = 0; $x < count($arr_dir); ++$x) {
