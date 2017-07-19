@@ -8,22 +8,19 @@ function changeImage($instructions, $image_URL) {
     $cur_Id = substr($chunkB, 0, strpos($chunkB, "/"));
     $cur_Image_Name = substr(strrchr($chunkB, "/"), 1);
 
-    print "<h1 style='color:white;'>URL: $image_URL</h1>";
-    print "<h1 style='color:white;'>CAT: $cur_Category</h1>";
-    print "<h1 style='color:white;'>id: $cur_Id</h1>";
-    print "<h1 style='color:white;'>img: $cur_Image_Name</h1>";
+    $return_Image_URL = "";
+
+    $arr_dir = scandir("http://intranet.bayley.net/bayley-portfolio/projects/$cur_Category/$cur_Id");
+    for($x = 0; $x < count($arr_dir); ++$x) {
+        print"<h1 style='color:white;'>$arr_dir[$x]</h1>";
+    }
 
 
-//    $return_Image_URL = "";
-//
 //    $conn = new mysqli("localhost", "root", "airpolo3", "intranet_Bayley");
 //    if ($conn->connect_error) { print "Database Connection Error"; }
 //
 //    $sql = "SELECT * FROM categories";
 //    $result = $conn->query($sql);
-//
-//    //Just so we can make featured first
-//    print "<a onclick=\"getProjects('Featured')\"><div class=\"category_Block\">Featured</div></a>";
 //
 //    if ($result->num_rows > 0) {
 //        while($row = $result->fetch_assoc()) {
@@ -34,8 +31,8 @@ function changeImage($instructions, $image_URL) {
 //        }
 //    }
 //    $conn->close();
-//
-//    return $return_Image_URL;
+
+    return $return_Image_URL;
 }
 
 function return_First_File_Name($dir) {
