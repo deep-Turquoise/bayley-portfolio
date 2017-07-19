@@ -16,7 +16,7 @@ function changeImage($instructions, $image_URL) {
         if($arr_dir[$x] == $cur_Image_Name) {
             if($instructions == "nextImage") {
                 $next_Num = $x + 1;
-                if($next_Num < count($arr_dir)) {
+                if($next_Num < (count($arr_dir)-1) {
                     $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[$next_Num];
                     print $new_image;
                 }
