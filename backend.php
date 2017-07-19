@@ -9,40 +9,10 @@ function changeImage($instructions, $image_URL) {
     $cur_Image_Name = substr(strrchr($chunkB, "/"), 1);
 
     $arr_dir = scandir("projects/$cur_Category/$cur_Id/");
+    print "<h1 style='color:white'>b.Num:". count($arr_dir) . "</h1>";
     unset($arr_dir[0]);
     unset($arr_dir[1]);
-
-    if(count($arr_dir) > 1) {
-        for($x = 0; $x < count($arr_dir); ++$x) {
-            if($arr_dir[$x] == $cur_Image_Name) {
-                if($instructions == "nextImage") {
-                    $next_Num = $x + 1;
-                    if($next_Num < count($arr_dir)) {
-                        $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[$next_Num];
-                        print $new_image;
-                        break;
-                    }
-                    else {
-                        $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[0];
-                        print $new_image;
-                        break;
-                    }
-                }
-                else {
-                    if($x > 0) {
-                        $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[$x-1];
-                        print $new_image;
-                        break;
-                    }
-                    else {
-                        $new_image = "projects/$cur_Category/$cur_Id/" . $arr_dir[0];
-                        print $new_image;
-                        break;
-                    }
-                }
-            }
-        }
-    }
+    print "<h1 style='color:white'>Num:". count($arr_dir) . "</h1>";
 }
 
 function return_First_File_Name($dir) {
