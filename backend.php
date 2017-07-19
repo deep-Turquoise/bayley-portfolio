@@ -44,6 +44,7 @@ function changeImage($instructions, $image_URL) {
                     echo "LOC:" . $loc;
                     if($loc == 0) {
                         $last_loc = count($arr_dir) - 1;
+                        print "<br>";
                         print "here1<br>";
                         print "$last_loc<br>";
                         print "$arr_dir[$last_loc]<br>";
