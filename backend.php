@@ -10,7 +10,7 @@ function changeImage($instructions, $image_URL) {
 
     $return_Image_URL = "";
 
-    $arr_dir = scandir("http://intranet.bayley.net/bayley-portfolio/projects/$cur_Category/$cur_Id");
+    $arr_dir = scandir("http://intranet.bayley.net/bayley-portfolio/projects/$cur_Category/$cur_Id/");
     for($x = 0; $x < count($arr_dir); ++$x) {
         print"<h1 style='color:white;'>$arr_dir[$x]</h1>";
     }
