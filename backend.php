@@ -2,7 +2,7 @@
 
 function changeImage($instructions, $image_URL) {
 
-    $chunkA = substr($image_URL, 10, strlen($image_URL));
+    $chunkA = substr($image_URL, 54, strlen($image_URL));
     print "<h1 style='color:white;'>URL: $image_URL</h1>";
     print "<h1 style='color:white;'>$chunkA</h1>";
 
