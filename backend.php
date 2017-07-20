@@ -16,6 +16,7 @@ function changeImage($instructions, $image_URL) {
     $cur_Image_Name = substr(strrchr($chunkA, "/"), 1);
 
     $scan_arr = scandir("projects/$cur_Category/$cur_Id/");
+    $arr_dir = [];
 
     print "<h1 style='color:white'>Count Before: ". count($scan_arr) . "</h1>";
     for($x = 0; $x < count($scan_arr); ++$x) {
