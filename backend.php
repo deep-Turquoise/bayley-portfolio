@@ -15,17 +15,13 @@ function changeImage($instructions, $image_URL) {
     $cur_Id = substr($chunkB, 0, strpos($chunkB, "/"));
     $cur_Image_Name = substr(strrchr($chunkA, "/"), 1);
 
-    //$scan_arr = scandir("projects/$cur_Category/$cur_Id/");
-    print "<h1 style='color:white'>Count Before: ". count($arr_dir) . "</h1>";
-    $arr_dir = scandir("projects/$cur_Category/$cur_Id/");
-    unset($arr_dir[0]);
-    unset($arr_dir[0]);
-
-//    for($x = 0; $x < count($scan_arr); ++$x) {
-//        $num = $x+2;
-//        if
-//        $arr_dir[$x] = $scan_arr[$num];
-//    }
+    $scan_arr = scandir("projects/$cur_Category/$cur_Id/");
+    print "<h1 style='color:white'>Count Before: ". count($scan_arr) . "</h1>";
+    for($x = 0; $x < count($scan_arr); ++$x) {
+        if($scan_arr[$x] != "." && $scan_arr[$x] != ".." && $scan_arr[$x] != "") {
+            array_push($arr_dir, $scan_arr[$x]);
+        }
+    }
     print "<h1 style='color:white'>Count After: ". count($arr_dir) . "</h1>";
 
     for($y=0; $y < count($arr_dir); ++$y) {
