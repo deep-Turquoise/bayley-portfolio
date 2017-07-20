@@ -18,14 +18,11 @@ function changeImage($instructions, $image_URL) {
     $scan_arr = scandir("projects/$cur_Category/$cur_Id/");
     $arr_dir = [];
 
-    print "<h1 style='color:white'>Count Before: ". count($scan_arr) . "</h1>";
     for($x = 0; $x < count($scan_arr); ++$x) {
         if($scan_arr[$x] != "." && $scan_arr[$x] != ".." && $scan_arr[$x] != "") {
-            print "<h1 style='color:white'>scan $x: ". $scan_arr[$x] . " - " . gettype(scan_arr[$x]) . "</h1>";
             array_push($arr_dir, $scan_arr[$x]);
         }
     }
-    print "<h1 style='color:white'>Count After: ". count($arr_dir) . "</h1>";
 
     for($y=0; $y < count($arr_dir); ++$y) {
         print "<h1 style='color:white'>$y:". $arr_dir[$y] . "</h1>";
