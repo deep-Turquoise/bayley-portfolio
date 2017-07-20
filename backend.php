@@ -32,7 +32,7 @@ function changeImage($instructions, $image_URL) {
                         print "projects/$cur_Category/$cur_Id/" . $arr_dir[0];
                     }
                     else {
-                        print "project/$cur_Category/$cur_Id/" . $arr_dir[$x+1];
+                        print "projects/$cur_Category/$cur_Id/" . $arr_dir[$x+1];
                     }
                 }
                 if($instructions == "backImage") {
