@@ -85,7 +85,8 @@ function openModal($category, $id) {
 
                 print "<div class=\"modal_image_overlay\">";
                 print "<h1>" . $row['project_name'] . "</h1>";
-                print "<p>" . $row['project_location'] . "</p>";
+                print "<h3>" . $row['project_location'] . "</h3>";
+                print "<p>" . $row['description'] . "</p>";
 
                 print "</div>"; // END overlay
                 print "</a></div>"; // END block
