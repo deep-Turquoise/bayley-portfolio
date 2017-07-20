@@ -49,7 +49,7 @@ function changeImage($instructions, $image_URL) {
         }
     }
     if(count($arr_dir) <= 1) {
-        print "project/$cur_Category/$cur_Id/$cur_Image_Name";
+        print "projects/$cur_Category/$cur_Id/$cur_Image_Name";
     }
 
 //    print "</div>";
