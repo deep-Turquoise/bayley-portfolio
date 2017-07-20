@@ -1,8 +1,8 @@
 <?php
 
 function changeImage($instructions, $image_URL) {
-    print "<div style='color:white'>";
-    print "<p>$image_URL</p>";
+//    print "<div style='color:white'>";
+//    print "<p>$image_URL</p>";
 
     if(strpos($image_URL,"http://intranet.bayley.net") === false) {
         $chunkA = substr($image_URL, 0, strlen($image_URL));
@@ -24,10 +24,35 @@ function changeImage($instructions, $image_URL) {
         }
     }
 
-    for($y=0; $y < count($arr_dir); ++$y) {
-        print "<h1 style='color:white'>$y:". $arr_dir[$y] . "</h1>";
+    if(count($arr_dir) > 1) {
+        for($x = 0; $x < count($arr_dir); ++$x) {
+            if($arr_dir[$x] == $cur_Image_Name) {
+                if($instructions == "nextImage") {
+                    if($x == (count($arr_dir)-1)) {
+                        print "projects/$cur_Category/$cur_Id/" . $arr_dir[0];
+                    }
+                    else {
+                        print "project/$cur_Category/$cur_Id/" . $arr_dir[$x+1];
+                    }
+                }
+                if($instructions == "backImage") {
+                    if($x == 0) {
+                        print "projects/$cur_Category/$cur_Id/" . $arr_dir[count($arr_dir)-1];
+                    }
+                    else {
+                        print "projects/$cur_Category/$cur_Id/" . $arr_dir[$x-1];
+                    }
+                }
+
+                break;
+            }
+        }
     }
-    print "</div>";
+    if(count($arr_dir) >= 1) {
+        print "project/$cur_Category/$cur_Id/$cur_Image_Name";
+    }
+
+//    print "</div>";
 }
 
 function return_First_File_Name($dir) {
