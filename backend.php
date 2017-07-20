@@ -27,6 +27,7 @@ function changeImage($instructions, $image_URL) {
     for($y=0; $y < count($arr_dir); ++$y) {
         print "<h1 style='color:white'>$y:". $arr_dir[$y] . "</h1>";
     }
+    print "</div>";
 }
 
 function return_First_File_Name($dir) {
