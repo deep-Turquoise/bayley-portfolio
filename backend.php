@@ -19,8 +19,8 @@ function changeImage($instructions, $image_URL) {
 
     print "<h1 style='color:white'>Count Before: ". count($scan_arr) . "</h1>";
     for($x = 0; $x < count($scan_arr); ++$x) {
-        print "<h1 style='color:white'>scan $x: ". $scan_arr[$x] . " - " . gettype(scan_arr[$x]) . "</h1>";
         if($scan_arr[$x] != "." && $scan_arr[$x] != ".." && $scan_arr[$x] != "") {
+            print "<h1 style='color:white'>scan $x: ". $scan_arr[$x] . " - " . gettype(scan_arr[$x]) . "</h1>";
             array_push($arr_dir, $scan_arr[$x]);
         }
     }
