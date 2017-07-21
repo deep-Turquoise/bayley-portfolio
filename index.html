@@ -71,10 +71,7 @@
         xmlhttp.send();
     }
 
-    function firstLoad() {
-        getCategories();
-        getProjects("Featured");
-
+    function adjForMobile() {
         if( navigator.userAgent.match(/Android/i)
             || navigator.userAgent.match(/webOS/i)
             || navigator.userAgent.match(/iPhone/i)
@@ -88,6 +85,12 @@
             document.getElementsByClassName("project_Block").style.width = "100%";
             document.getElementsByClassName("project_Block").style.height = "auto";
         }
+    }
+
+    function firstLoad() {
+        getCategories();
+        getProjects("Featured");
+        adjForMobile();
     }
 
     document.getElementById("modal").onclick = function (event) {
