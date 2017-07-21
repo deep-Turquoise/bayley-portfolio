@@ -81,10 +81,10 @@
             || navigator.userAgent.match(/BlackBerry/i)
             || navigator.userAgent.match(/Windows Phone/i))
         {
-            document.getElementById("category_Block").style.display = "inline-block";
-            document.getElementById("project_Block").style.display = "block";
-            document.getElementById("project_Block").style.width = "100%";
-            document.getElementById("project_Block").style.height = "auto";
+            document.getElementsByClassName("category_Block").style.display = "inline-block";
+            document.getElementsByClassName("project_Block").style.display = "block";
+            document.getElementsByClassName("project_Block").style.width = "100%";
+            document.getElementsByClassName("project_Block").style.height = "auto";
         }
             getCategories();
             getProjects("Featured");
