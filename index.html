@@ -72,6 +72,8 @@
     }
 
     function firstLoad() {
+        getCategories();
+        getProjects("Featured");
 
         if( navigator.userAgent.match(/Android/i)
             || navigator.userAgent.match(/webOS/i)
@@ -86,9 +88,7 @@
             document.getElementsByClassName("project_Block").style.width = "100%";
             document.getElementsByClassName("project_Block").style.height = "auto";
         }
-            getCategories();
-            getProjects("Featured");
-        }
+    }
 
     document.getElementById("modal").onclick = function (event) {
         if(event.target === document.getElementById("modal")
